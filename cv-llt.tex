@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%
+%  My current CV, based on a CurveCV template.
+% Original template source: https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv 
+% 
+% Last Update: February 9, 2022
+%
+
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+% Uncomment to enable Chinese; needs XeLaTeX
+% \usepackage{ctex}
+
+\usepackage{settings}
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec} 
+  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+%% Only needed if you want a Publication List
+\addbibresource{own-bib.bib}
+
+%% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
+\myname{Elmurod}{Kuriyozov}
+% \myname{d'Andrimont}{Raphaël}
+
+% Change the page margins if you want
+% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+
+% Change the colours if you want
+% \definecolor{SwishLineColour}{HTML}{00FFFF}
+% \definecolor{MarkerColour}{HTML}{0000CC}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+\includecomment{fullonly}
+% \excludecomment{fullonly}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\leftheader{%
+  {\LARGE\bfseries\sffamily Elmurod Kuriyozov}
+
+  \makefield{\faEnvelope[regular]}{\texttt{elmurod1202@gmail.com}}
+  \makefield{\faTwitter}{\texttt{@elmurod1202}}
+  \makefield{\faOrcid}{0000-0003-1702-1222}
+  
+  
+  \makefield{\faLinkedin}{\url{https://www.linkedin.com/in/elmurod-kuriyozov/}}
+
+}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{photo}
+\photoscale{0.13}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+\makerubric{education}
+\makerubric{employment}
+
+
+% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
+\input{publications}
+
+\makerubric{skills}
+\makerubric{misc}
+
+\makerubric{referee}
+% \input{referee-full}
+
+\end{document}
