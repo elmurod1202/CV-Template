@@ -21,12 +21,12 @@ You are free to copy the project and modify it to create your own CV.
 You can see the screenshots of the CV template I created for myself:
 Front:
 <div align="center">
-<img src="https://github.com/elmurod1202/cv-template/blob/main/screenshots/cv-front.png?raw=true" width = "700" Alt = "Front side of the CV template">
+<img src="https://github.com/elmurod1202/cv-template/blob/main/screenshots/cv-front.png?raw=true" width = "500" Alt = "Front side of the CV template">
 </div>
 <br />
 Back:
 <div align="center">
-<img src="https://github.com/elmurod1202/cv-template/blob/main/screenshots/cv-back.png?raw=true" width = "700" Alt = "Back side of the CV template">
+<img src="https://github.com/elmurod1202/cv-template/blob/main/screenshots/cv-back.png?raw=true" width = "500" Alt = "Back side of the CV template">
 </div>
 
 
